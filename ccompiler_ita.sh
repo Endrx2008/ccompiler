@@ -36,4 +36,3 @@ if [ $? -eq 0 ]; then
 else
     echo "Compilazione fallita. Cerca eventuali errori nel codice e riprova."
 fi
-echo "Fatto, ciao."
