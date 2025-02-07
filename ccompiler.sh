@@ -17,14 +17,14 @@ echo ""
 echo "Inserisci indirizzo cartella e file .cpp: " && read percorso
 echo "Inserisci nome dell'eseguibile: " && read nome
 clear
-echo "Compiling ...."
-nome2="/mnt/hdd/codes/c++/forge/$nome"
+echo "Compilo ...."
+nome2="/percorso_della_cartella_di_generazione/$nome"
 g++ "$percorso" -o "$nome2"
 
 if [ $? -eq 0 ]; then
     clear
-    echo "Compilation successful! Executable saved as $nome2"
-    echo -n "Execute? [y/n]"
+    echo "Compilato con successo! Eseguibile salvato come $nome2"
+    echo -n "Eseguo? [y/n]"
     read ask
     ask=$(echo "$ask" | tr '[:upper:]' '[:lower:]')
 
@@ -34,6 +34,6 @@ if [ $? -eq 0 ]; then
         echo "Fine esecuzione."
     fi
 else
-    echo "Compilation failed. Check for errors in your code."
+    echo "Compilazione fallita. Cerca eventuali errori nel codice e riprova."
 fi
-echo "Done bye."
+echo "Fatto, ciao."
