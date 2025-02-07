@@ -41,6 +41,9 @@ sudo dnf install gcc-c++ -y                 # Fedora
 sudo pacman -S gcc                          # Arch Linux
 ```
 
+# ⚠️ Importante:
+Non dimenticare di sostituire il percorso dove il codice va a salvare i file compilati, di default è impostato su "percorso_della_cartella_di_generazione" ma se non lo imposti sulla cartella che vuoi otterrai un errore anche se il file è corretto.
+
 ---
 💡 **Suggerimenti e miglioramenti sono benvenuti!** Apri una issue o un pull request se hai idee per migliorare lo script. 🚀
 
