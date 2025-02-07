@@ -36,4 +36,3 @@ if [ $? -eq 0 ]; then
 else
     echo "Compilation error. Search for errors in your code and retry."
 fi
-echo "Done, bye."
